@@ -1,34 +1,44 @@
-## Job Application Form
-# Objective
-# Build a comprehensive job application form with nested conditional fields, multiple field types, and enhanced validation using React.
+# Job Application Form
 
-# Form Fields
-Full Name: Text input <br>
-Email: Email input <br>
-Phone Number: Number input <br>
-Applying for Position: Dropdown (Developer, Designer, Manager) <br>
-Relevant Experience: Number input (visible if "Developer" or "Designer" is selected) <br>
-Portfolio URL: Text input (visible if "Designer" is selected) <br>
-Management Experience: Text input (visible if "Manager" is selected) <br>
-Additional Skills: Multiple checkboxes (JavaScript, CSS, Python, etc.) <br>
-Preferred Interview Time: Date and Time Picker <br>
+## Objective
+This project implements an advanced job application form using React, featuring nested conditional fields, multiple field types, and robust validation.
 
-# Conditional Logic <br>
-Show Relevant Experience if "Developer" or "Designer" is selected. <br>
-Show Portfolio URL if "Designer" is selected. <br>
-Show Management Experience if "Manager" is selected.<br>
-# Validation<br>
-Full Name: Required<br>
-Email: Required and must be a valid email format<br>
-Phone Number: Required and must be a valid number<br>
-Relevant Experience: Required if "Developer" or "Designer" is selected, must be a number greater than 0<br>
-Portfolio URL: Required if "Designer" is selected, must be a valid URL<br>
-Management Experience: Required if "Manager" is selected<br>
-Additional Skills: At least one skill must be selected<br>
-Preferred Interview Time: Required and must be a valid date and time<br>
-# Submission<br>
-On form submission, display a summary of the entered data.<br>
-# Requirements<br>
-Use React functional components and hooks (useState, useEffect).<br>
-Implement custom hooks for form validation and management.<br>
-Ensure a clean and user-friendly interface with clear error messages.<br>
+## Features
+- **Dynamic Fields**: Conditionally display fields based on selected job position.
+- **Validation**: Ensures all required fields are filled out correctly before submission.
+- **Summary Display**: Shows a summary of the entered data upon form submission.
+
+## Form Fields
+- **Full Name**: Required text input for applicant's full name.
+- **Email**: Required email input for applicant's email address.
+- **Phone Number**: Required number input for applicant's phone number.
+- **Applying for Position**: Dropdown selection for Developer, Designer, or Manager.
+- **Relevant Experience**: Required number input, visible if applying for Developer or Designer.
+- **Portfolio URL**: Required text input, visible if applying for Designer.
+- **Management Experience**: Required text input, visible if applying for Manager.
+- **Additional Skills**: Multiple checkboxes for selecting relevant skills (JavaScript, CSS, Python, etc.).
+- **Preferred Interview Time**: Required date and time picker for scheduling interviews.
+
+## Technologies Used
+- React
+- Custom Hooks (`useForm`, `useFormValidation`)
+- HTML/CSS for styling
+
+## Setup Instructions
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Install dependencies using `npm install`.
+4. Start the development server with `npm start`.
+5. Open your browser and go to `http://localhost:3000` to view the form.
+
+
+
+## Custom Hooks
+- **useForm**: Manages form state including field values and visibility based on conditional logic.
+- **useFormValidation**: Handles form validation logic based on defined rules.
+
+## Additional Notes
+- Ensure all dependencies are installed (`react`, `react-dom`, etc.) before running the application.
+- The form UI is designed to provide a seamless user experience with clear feedback on errors.
+
+Feel free to customize and expand upon this project as needed. Happy coding!
